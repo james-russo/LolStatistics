@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true" assembly="LolWorldFinalStats.Models" namespace="LolWorldFinalStats.Models.Domain">
+  <class name="ChampionEventSession" table="ChampionEventSession" dynamic-update="true" >
+    <cache usage="read-write"/>
+    <id name="Id" column="Id" type="int">
+      <generator class="native" />
+    </id>
+    <property name="ChampionId" />
+    <property name="TeamMemberId" />
+    <property name="EventSessionId" />
+  </class>
+</hibernate-mapping>
